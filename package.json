@@ -5,10 +5,10 @@
   "main": "src/client/app/index.jsx",
   "scripts": {
     "start": "webpack-dev-server -d --hot --inline --progress --colors",
-    "dev-build": "webpack -d -- watch --progress",
+    "dev-build": "webpack -d --watch --progress",
     "build": "webpack -p --config webpack.prod.config.js --progress",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "npm run build && gh-pages -d src/client/public -b master"
+    "deploy": "npm run build && gh-pages -d src/client/dist -b master"
   },
   "bugs": {
     "url" : "https://github.com/robbawebba/barebones-react-starter/issues",
